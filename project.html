@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="header">
+                <h2>Zomato</h2>
+            </div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <select name="location" id="location">
+                    <option value="location">Detect current location</option>
+                    <option value="location">Pakri kapoor , India</option>
+                    <option value="location">Gangtok , India</option>
+                </select>
+                <i class="fa-solid fa-magnifying-glass search"></i>
+                <input type="text" placeholder="Search for restaurant, Cuisine or a dish">
+            </div>
+            <div class="account">
+                <a href="#">Log in</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+        <p class="selected-location">Home / India <span>Gangtok restaurant</span></p>
+        <div class="option">
+            <div class="opt opt1"> <img src="pages images/delivery.png" alt=""><span>Delivery</span></div>
+            <div class="opt opt2"> <img src="pages images/spoon.png" alt=""><span>Dining Out</span></div>
+            <div class="opt opt3"> <img src="pages images/beer.png" alt=""><span>Nightlife</span></div>
+        </div>
+        <div class="filter">
+            <span>Filter</span>
+            <span>Delivert Time</span>
+            <span>Rating 4.0+</span>
+            <span>Pure Veg</span>
+            <span>Cuisine</span>
+            <span>More Filter</span>
+        </div>
+        <div class="first-order" id="f-order">
+            <p>Inspiration for your first order</p>
+            <div class="slider">
+                <div class="forder"><img src="sliderimages/slider_image0.avif" alt=""><span>Pizza</span></div>
+                <div class="forder"><img src="sliderimages/slider_image2.avif" alt=""><span>Briyani</span></div>
+                <div class="forder"><img src="sliderimages/slider_image3.webp" alt=""><span>Chicken</span></div>
+                <div class="forder"><img src="sliderimages/slider_image4.avif" alt=""><span>Burger</span></div>
+                <div class="forder"><img src="sliderimages/slider_image5.avif" alt=""><span>Fried Rice</span></div>
+                <div class="forder"><img src="sliderimages/slider_image6.avif" alt=""><span>Momos</span></div>
+                <div class="forder"><img src="sliderimages/slider_image7.avif" alt=""><span>Rools</span></div>
+                <div class="forder"><img src="sliderimages/slider_image8.avif" alt=""><span>Thali</span></div>
+                <div class="forder"><img src="sliderimages/slider_image9.avif" alt=""><span>Paneer</span></div>
+                <div class="forder"><img src="sliderimages/slider_image11.avif" alt=""><span>Noodles</span></div>
+                <div class="forder"><img src="sliderimages/silder_image12.avif" alt=""><span>Cake</span></div>
+                <div class="forder"><img src="sliderimages/silder_image13.avif" alt=""><span>Paratha</span></div>
+            </div>
+        </div>
+        <button class="btn btn1 " onclick="nex()">&#60</button>
+        <button class="btn btn2 " onclick="pre()">&#x3e</button>
+        <div class="restaurents">
+            <div class="r-box">
+                <img src="main images/pizza.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">26 min</p>
+                <div class="name-rating">
+                    <p>Pizza Hut</p>
+                    <p class="rate">3.7 &#10025</p>
+                </div>
+                <div class="more"><span>Pizza , Fast Food , Dessert.......</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>1200+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/khan uncle.jpg" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">30 min</p>
+                <div class="name-rating">
+                    <p>Khan Uncle's Biryani House</p>
+                    <p class="rate">3.6 &#10025</p>
+                </div>
+                <div class="more"><span>North Indian, Biryani, chin......</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>650+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/momo.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">44 min</p>
+                <div class="name-rating">
+                    <p>Roots And Shoots</p>
+                    <p class="rate">4.0 &#10025</p>
+                </div>
+                <div class="more"><span>Chinese, Street Food, Nor......</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>225+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/bowljini.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">26 min</p>
+                <div class="name-rating">
+                    <p>Bowljini - Mix Eat Repeat</p>
+                    <p class="rate">4.2 &#10025</p>
+                </div>
+                <div class="more"><span>Asian, Chinese, Shake, ...span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>1375+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/binary.jpg" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">31 min</p>
+                <div class="name-rating">
+                    <p>Biryani Bhai</p>
+                    <p class="rate">3.4 &#10025</p>
+                </div>
+                <div class="more"><span>Mughlai, North India, ...</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>325+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/roll.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">30 min</p>
+                <div class="name-rating">
+                    <p>Roll House</p>
+                    <p class="rate">2.8 &#10025</p>
+                </div>
+                <div class="more"><span>Fast Food</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>450+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/shahi darbar.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">37 min</p>
+                <div class="name-rating">
+                    <p>Shahi Darbar</p>
+                    <p class="rate">3.0 &#10025</p>
+                </div>
+                <div class="more"><span>Chinese, Street Food, ...</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>300+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/chicken.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">37 min</p>
+                <div class="name-rating">
+                    <p>The Square</p>
+                    <p class="rate">4.0 &#10025</p>
+                </div>
+                <div class="more"><span>North India, Asian, Ch...</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>450+ orders placed from here recently</p>
+                </div>
+            </div>
+            <div class="r-box">
+                <img src="main images/square.avif" alt="">
+                <p class="offer">50% OFF up to 100</p>
+                <p class="time">40 min</p>
+                <div class="name-rating">
+                    <p>The Square Cafe</p>
+                    <p class="rate">3.4 &#10025</p>
+                </div>
+                <div class="more"><span>Fast Food, Burger, chi...</span><span>&#8377 200 for one</span></div>
+                <hr>
+                <div class="text">
+                    <img src="main images/arrow.webp" alt="">
+                    <p>200+ orders placed from here recently</p>
+                </div>
+            </div>
+        </div>
+        <div class="explore">
+            <p class="para">Explore options near me</p>
+            <div class="e-box">
+                <div class="p-box">
+                    <p id="click1">Popular cuisines near me</p> <i class="fa-sharp fa-solid fa-angle-down icon"
+                        id="icon1"></i>
+                </div>
+                <div class="boxs open" id="boxs1">
+                    <a href="#">Bakery food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Beverages food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Biryani food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Burger food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Cafe food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Chinese food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Continental food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Desserts food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Italian food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Momos food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Nepalese food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> North Eastern food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> North Indian food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Pasta food near me Pizza food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Pizza food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Sandwich food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </div>
+            <div class="e-box">
+                <div class="p-box">
+                    <p id="click2">Popular cuisines near me</p> <i class="fa-sharp fa-solid fa-angle-down icon"
+                        id="icon2"></i>
+                </div>
+                <div class="boxs open" id="boxs2">
+                    <a href="#">Bakery food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Beverages food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Biryani food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Burger food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Cafe food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Chinese food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Continental food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Desserts food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#"> Italian food near me </a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Momos food near me</a>
+                    <i class="fa-solid fa-circle"></i>
+                    <a href="#">Nepalese food near me </a>
+                </div>
+            </div>
+            <div class="e-box">
+                <div class="p-box">
+                    <p id="click3">Popular cuisines near me</p> <i class="fa-sharp fa-solid fa-angle-down icon"
+                        id="icon3"></i>
+                </div>
+                <div class="boxs open" id="boxs3">
+                    <ul>
+                        <li><a href="#">Agra</a></li>
+                        <li><a href="#">Pune</a></li>
+                        <li><a href="#">Delhi NCR</a></li>
+                        <li><a href="#">Gangtok</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Kolkata</a></li>
+                        <li><a href="#">lndor</a></li>
+                        <li><a href="#">Bhopal</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Goa</a></li>
+                        <li><a href="#">Manali</a></li>
+                        <li><a href="#">Bengaluru</a></li>
+                        <li><a href="#">Kanpur</a></li>
+                        <li><a href="#">Kota</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="countries">
+                <span>Zomato</span>
+                <div class="o-link">
+                    <p> <img src="footer images/logo1.jpeg" alt="">India <i
+                            class="fa-sharp fa-solid fa-angle-down icon"></i></p>
+
+                    <p> <img src="footer images/logo2.png" alt="" class="img"> English <i
+                            class="fa-sharp fa-solid fa-angle-down icon"></i></p>
+                </div>
+            </div>
+            <div class="text">
+                <div class="t-boxs">
+                    <p>ABOUT ZOMATO</p>
+                    <ul>
+                        <li>Who We Are</li>
+                        <li>Blog</li>
+                        <li>Work With Us</li>
+                        <li>Investor Relations</li>
+                        <li>Report Fraud</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="t-boxs">
+                    <p>ZOMAVERSE</p>
+                    <ul>
+                        <li>Zomato</li>
+                        <li>Blinkit</li>
+                        <li>Feeding India</li>
+                        <li>Hyperpure</li>
+                        <li>Zomaland</li>
+                    </ul>
+                </div>
+                <div class="t-boxs">
+                    <p>FOR RESTAURANTS</p>
+                    <ul>
+                        <li>Partner With Us</li>
+                        <li>Apps For Us</li>
+                    </ul>
+                </div>
+                <div class="t-boxs">
+                    <p>FOR ENTERPRISES</p>
+                    <ul>
+                        <li>Work For Zomato</li>
+                    </ul>
+                </div>
+                <div class="t-boxs">
+                    <p>LEARN MORE</p>
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Security</li>
+                        <li>Terms</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+                <div class="social-link">
+                    <span>SOCIAL LINKS</span>
+                    <div class="link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="social-link-img">
+                        <img src="footerlink images/fimage1.webp" alt="">
+                        <img src="footerlink images/fimage2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="project.js"></script>
+
+</html>
